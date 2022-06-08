@@ -1,4 +1,4 @@
-module github.com/mholt/archiver/v4
+module github.com/hunchly/archiver
 
 go 1.18
 
@@ -14,6 +14,14 @@ require (
 
 require (
 	github.com/golang/snappy v0.0.4
+	github.com/mholt/archiver v3.1.1+incompatible
 	github.com/pierrec/lz4/v4 v4.1.14
 	golang.org/x/text v0.3.7
+)
+
+require (
+	github.com/frankban/quicktest v1.14.3 // indirect
+	github.com/nwaples/rardecode v1.1.3 // indirect
+	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
+	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
 )

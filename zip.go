@@ -159,7 +159,8 @@ func (z Zip) archiveOneFile(ctx context.Context, zw *zip.Writer, idx int, file F
 			hdr.Method = z.Compression
 		}
 	}
-
+	
+	hdr.Modified = file.ModTime()
 	w, err := zw.CreateHeader(hdr)
 	if err != nil {
 		return fmt.Errorf("creating header for file %d: %s: %w", idx, file.Name(), err)
